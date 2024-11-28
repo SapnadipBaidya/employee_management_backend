@@ -1,0 +1,10 @@
+FROM node:latest
+# FROM redis:latest
+COPY . .
+RUN npm install -g nodemon
+# RUN npm install redis
+RUN npm install winston
+WORKDIR /app
+RUN npm install
+EXPOSE 3000
+CMD ["npm","run","dev"]

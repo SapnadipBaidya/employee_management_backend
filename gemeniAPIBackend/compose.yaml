@@ -1,0 +1,8 @@
+services:
+  img:
+    build: .
+    container_name: gemini_chatbot_contianer
+    ports:
+     - 3000:3000
+     
+
